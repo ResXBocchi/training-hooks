@@ -23,3 +23,7 @@ span{
 .item{
     text-align: justify;
 }
+p{
+    color:red;
+    font-weight: bold;
+}

@@ -48,6 +48,7 @@ const Search = () => {
 
     return (
         <div className="search">
+            <p>Search on Wikipedia</p>
             <div className='ui form'>
                 <div className='field'>
 
