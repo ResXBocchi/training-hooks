@@ -1,0 +1,25 @@
+body{
+    background-color: #000;
+}
+
+span{
+    color:white;
+}
+.header{
+    color:red !important
+}
+#header{
+    color:red !important
+}
+#root{
+    text-align: center;
+    margin: 5% 20%;
+}
+
+.search{
+    min-width:50%
+}
+
+.item{
+    text-align: justify;
+}

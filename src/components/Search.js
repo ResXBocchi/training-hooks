@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import axios from 'axios';
+import './Search.css'
 
 const Search = () => {
 
@@ -36,7 +37,7 @@ const Search = () => {
         return(
         <div key={result.pageid} className='item'>
             <div className='content'>
-                <a href={`https://en.wikipedia.org/wiki/${result.title.replace(' ','_')}`} className='header'>
+                <a href={`https://en.wikipedia.org/wiki/${result.title.replace(' ','_')}`} className='header' id='header'>
                     {result.title}
                 </a>
                 <span dangerouslySetInnerHTML={{ __html: result.snippet}}></span>
@@ -46,11 +47,12 @@ const Search = () => {
     
 
     return (
-        <div>
+        <div className="search">
             <div className='ui form'>
                 <div className='field'>
-                    <label>Enter Search Term</label>
+
                     <input 
+                        placeholder='Enter some value'
                         value={term}
                         className='input'
                         onChange={(e) => setTerm(e.target.value)}
