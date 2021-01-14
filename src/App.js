@@ -41,10 +41,14 @@ export default() => {
         <div>
             <button onClick={() => setShowDropdown(!showDropdown)}>Toggle Dropdown</button>
             {showDropdown?
-            <Dropdown 
-                selected={selected}
-                options={options}
-                onSelectedChange={setSelected}
-            />:null}
+                <div>
+                <Dropdown 
+                    selected={selected}
+                    options={options}
+                    onSelectedChange={setSelected}
+                />
+                <p style={{color:`${selected.value}`}}>LOREM IPSUM</p>
+                </div>
+            :null}
         </div>);
 };
